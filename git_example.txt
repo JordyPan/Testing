@@ -1,0 +1,19 @@
+us
+git init
+git add *
+git commit -m message
+git remote add origin https:...
+git remove -v
+git push origin branch
+
+git pull origin branch
+git add*
+git commit -a -m message
+
+china
+git clone -b branch htpps:...
+git add *
+git commit -a -m message
+git push origin branch
+
+git pull origin brach
