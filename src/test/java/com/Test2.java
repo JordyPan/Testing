@@ -44,6 +44,7 @@ public class Test2 extends TestBase {
 
         logger.info("All items are present and correct--------------------> Test Passed");
         // adding comment for git
+        //adding comment for git2
     }
 
     @AfterTest
