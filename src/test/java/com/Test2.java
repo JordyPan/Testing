@@ -43,7 +43,7 @@ public class Test2 extends TestBase {
         Assert.assertTrue(hp.getNavBar().isDisplayed());
 
         logger.info("All items are present and correct--------------------> Test Passed");
-
+        // adding comment for git
     }
 
     @AfterTest
