@@ -2,46 +2,46 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-26T18:17:20 AEDT" name="All Test Suite" finished-at="2022-03-26T18:18:29 AEDT" duration-ms="68851">
+  <suite started-at="2022-03-28T13:10:09 AEDT" name="All Test Suite" finished-at="2022-03-28T13:11:12 AEDT" duration-ms="63007">
     <groups>
     </groups>
-    <test started-at="2022-03-26T18:17:20 AEDT" name="Test2" finished-at="2022-03-26T18:18:00 AEDT" duration-ms="40363">
+    <test started-at="2022-03-28T13:10:09 AEDT" name="Test2" finished-at="2022-03-28T13:10:30 AEDT" duration-ms="20276">
       <class name="com.Test2">
-        <test-method is-config="true" signature="homeTest(org.testng.ITestContext)[pri:0, instance:com.Test2@c7a975a]" started-at="2022-03-26T18:17:20 AEDT" name="homeTest" finished-at="2022-03-26T18:18:00 AEDT" duration-ms="40018" status="PASS">
+        <test-method is-config="true" signature="homeTest(org.testng.ITestContext)[pri:0, instance:com.Test2@3c0fae6c]" started-at="2022-03-28T13:10:09 AEDT" name="homeTest" finished-at="2022-03-28T13:10:29 AEDT" duration-ms="19968" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@47da3952]]>
+                <![CDATA[org.testng.TestRunner@5fd62371]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homeTest -->
-        <test-method signature="getHomePageItems()[pri:0, instance:com.Test2@c7a975a]" started-at="2022-03-26T18:18:00 AEDT" name="getHomePageItems" finished-at="2022-03-26T18:18:00 AEDT" duration-ms="168" status="PASS">
+        <test-method signature="getHomePageItems()[pri:0, instance:com.Test2@3c0fae6c]" started-at="2022-03-28T13:10:29 AEDT" name="getHomePageItems" finished-at="2022-03-28T13:10:29 AEDT" duration-ms="168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getHomePageItems -->
-        <test-method is-config="true" signature="closedrvier()[pri:0, instance:com.Test2@c7a975a]" started-at="2022-03-26T18:18:00 AEDT" name="closedrvier" finished-at="2022-03-26T18:18:00 AEDT" duration-ms="31" status="PASS">
+        <test-method is-config="true" signature="closedrvier()[pri:0, instance:com.Test2@3c0fae6c]" started-at="2022-03-28T13:10:30 AEDT" name="closedrvier" finished-at="2022-03-28T13:10:30 AEDT" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedrvier -->
       </class> <!-- com.Test2 -->
     </test> <!-- Test2 -->
-    <test started-at="2022-03-26T18:17:20 AEDT" name="Test1" finished-at="2022-03-26T18:18:29 AEDT" duration-ms="68851">
+    <test started-at="2022-03-28T13:10:09 AEDT" name="Test1" finished-at="2022-03-28T13:11:12 AEDT" duration-ms="63007">
       <class name="com.Test1">
-        <test-method is-config="true" signature="Setup(org.testng.ITestContext)[pri:0, instance:com.Test1@2e029d61]" started-at="2022-03-26T18:17:20 AEDT" name="Setup" finished-at="2022-03-26T18:17:21 AEDT" duration-ms="1562" status="PASS">
+        <test-method is-config="true" signature="Setup(org.testng.ITestContext)[pri:0, instance:com.Test1@297ea53a]" started-at="2022-03-28T13:10:09 AEDT" name="Setup" finished-at="2022-03-28T13:10:12 AEDT" duration-ms="2171" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@60bdf15d]]>
+                <![CDATA[org.testng.TestRunner@495083a0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="LoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.Test1@2e029d61]" started-at="2022-03-26T18:17:22 AEDT" name="LoginTest" data-provider="getData" finished-at="2022-03-26T18:17:51 AEDT" duration-ms="29619" status="PASS">
+        <test-method signature="LoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.Test1@297ea53a]" started-at="2022-03-28T13:10:12 AEDT" name="LoginTest" data-provider="getData" finished-at="2022-03-28T13:10:32 AEDT" duration-ms="19973" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,7 +57,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method signature="LoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.Test1@2e029d61]" started-at="2022-03-26T18:17:52 AEDT" name="LoginTest" data-provider="getData" finished-at="2022-03-26T18:18:29 AEDT" duration-ms="37112" status="PASS">
+        <test-method signature="LoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.Test1@297ea53a]" started-at="2022-03-28T13:10:32 AEDT" name="LoginTest" data-provider="getData" finished-at="2022-03-28T13:11:12 AEDT" duration-ms="40250" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -73,7 +73,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="closedrvier()[pri:0, instance:com.Test1@2e029d61]" started-at="2022-03-26T18:18:29 AEDT" name="closedrvier" finished-at="2022-03-26T18:18:29 AEDT" duration-ms="27" status="PASS">
+        <test-method is-config="true" signature="closedrvier()[pri:0, instance:com.Test1@297ea53a]" started-at="2022-03-28T13:11:12 AEDT" name="closedrvier" finished-at="2022-03-28T13:11:12 AEDT" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedrvier -->

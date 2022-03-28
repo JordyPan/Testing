@@ -13,12 +13,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.apache.commons.io.FileUtils;
+
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -56,7 +58,8 @@ public class TestBase {
                 if(browserName.contains("headless"))
                 {
                     //Headless execution
-                    options.addArguments("--headless");
+                    //options.addArguments("--headless");
+                    options.setHeadless(true);
                 }
 
 
@@ -81,6 +84,8 @@ public class TestBase {
         }
         else if(browserName.equalsIgnoreCase("firefox"))
         {
+            FirefoxOptions options = new FirefoxOptions();
+            options.setHeadless(true);
             System.setProperty("webdriver.gecko.driver", FireFoxDriver);
             driver = new FirefoxDriver();
         }
