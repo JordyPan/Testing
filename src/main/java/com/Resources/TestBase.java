@@ -13,6 +13,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -22,6 +24,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -85,6 +88,13 @@ public class TestBase {
         {
             System.setProperty("webdriver.edge.driver", EdgeDriver);
             driver = new EdgeDriver();
+        }
+        else if(browserName.equalsIgnoreCase("grid")) {
+            DesiredCapabilities dc = new DesiredCapabilities();
+            dc.setBrowserName("chrome");
+            dc.setPlatform(Platform.WIN10);
+
+            driver = new RemoteWebDriver(new URL("http://192.168.50.136:4444"), dc);
         }
 
 
