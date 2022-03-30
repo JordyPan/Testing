@@ -27,6 +27,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
+import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -43,8 +44,8 @@ public class TestBase {
         FileInputStream fi = new FileInputStream("src/main/java/com/Properties/GlobalParameters.properties");
         p.load(fi);
 
-        //String browserName = p.getProperty("browser");
-        String browserName = System.getProperty("browser");
+        String browserName = p.getProperty("browser");
+        //String browserName = System.getProperty("browser");
         String ChromeDriver = System.getProperty("user.dir")+p.getProperty("ChromeDriver");
         String FireFoxDriver = System.getProperty("user.dir")+p.getProperty("FireFoxDriver");
         String EdgeDriver = System.getProperty("user.dir")+p.getProperty("EdgeDriver");
@@ -221,6 +222,16 @@ public class TestBase {
             }
         }
     return result;
+
+    }
+
+    public ResultSet ConnectMySQLDatabase(String host, String port, String DbName, String username, String password, String query) throws SQLException {
+
+        Connection con = DriverManager.getConnection("jdbc:mysql://"+ host + port + DbName, username,password);
+        Statement state = con.createStatement();
+        ResultSet result = state.executeQuery(query);
+
+        return result;
 
     }
 
