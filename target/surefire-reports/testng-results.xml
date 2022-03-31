@@ -1,100 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-31T13:31:05 AEDT" name="All Test Suite" finished-at="2022-03-31T13:32:04 AEDT" duration-ms="59546">
+  <suite started-at="2022-03-31T15:23:50 AEDT" name="All Test Suite" finished-at="2022-03-31T15:25:04 AEDT" duration-ms="74338">
     <groups>
     </groups>
-    <test started-at="2022-03-31T13:31:05 AEDT" name="Test4" finished-at="2022-03-31T13:31:12 AEDT" duration-ms="7349">
-      <class name="com.Test4">
-        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.Test4@119f1f2a]" started-at="2022-03-31T13:31:05 AEDT" name="setup" finished-at="2022-03-31T13:31:06 AEDT" duration-ms="1558" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@25f7391e]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="uploadFile()[pri:0, instance:com.Test4@119f1f2a]" started-at="2022-03-31T13:31:06 AEDT" name="uploadFile" finished-at="2022-03-31T13:31:12 AEDT" duration-ms="5666" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadFile -->
-        <test-method is-config="true" signature="closedrvier()[pri:0, instance:com.Test4@119f1f2a]" started-at="2022-03-31T13:31:12 AEDT" name="closedrvier" finished-at="2022-03-31T13:31:12 AEDT" duration-ms="21" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closedrvier -->
-      </class> <!-- com.Test4 -->
-    </test> <!-- Test4 -->
-    <test started-at="2022-03-31T13:31:05 AEDT" name="Test2" finished-at="2022-03-31T13:31:17 AEDT" duration-ms="12329">
-      <class name="com.Test2">
-        <test-method is-config="true" signature="homeTest(org.testng.ITestContext)[pri:0, instance:com.Test2@6326d182]" started-at="2022-03-31T13:31:05 AEDT" name="homeTest" finished-at="2022-03-31T13:31:17 AEDT" duration-ms="12080" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@674c583e]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homeTest -->
-        <test-method signature="getHomePageItems()[pri:0, instance:com.Test2@6326d182]" started-at="2022-03-31T13:31:17 AEDT" name="getHomePageItems" finished-at="2022-03-31T13:31:17 AEDT" duration-ms="118" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getHomePageItems -->
-        <test-method is-config="true" signature="closedrvier()[pri:0, instance:com.Test2@6326d182]" started-at="2022-03-31T13:31:17 AEDT" name="closedrvier" finished-at="2022-03-31T13:31:17 AEDT" duration-ms="17" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closedrvier -->
-      </class> <!-- com.Test2 -->
-    </test> <!-- Test2 -->
-    <test started-at="2022-03-31T13:31:05 AEDT" name="Test3" finished-at="2022-03-31T13:31:19 AEDT" duration-ms="14594">
+    <test started-at="2022-03-31T15:23:50 AEDT" name="Test3" finished-at="2022-03-31T15:24:07 AEDT" duration-ms="17017">
       <class name="com.Test3">
-        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.Test3@72bd06ca]" started-at="2022-03-31T13:31:05 AEDT" name="setup" finished-at="2022-03-31T13:31:06 AEDT" duration-ms="1558" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.Test3@625e134e]" started-at="2022-03-31T15:23:50 AEDT" name="setup" finished-at="2022-03-31T15:23:52 AEDT" duration-ms="1907" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5623392b]]>
+                <![CDATA[org.testng.TestRunner@12554996]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="getDatabsedata(org.testng.ITestContext)[pri:0, instance:com.Test3@72bd06ca]" started-at="2022-03-31T13:31:06 AEDT" name="getDatabsedata" finished-at="2022-03-31T13:31:19 AEDT" duration-ms="12936" status="PASS">
+        <test-method signature="getDatabsedata(org.testng.ITestContext)[pri:0, instance:com.Test3@625e134e]" started-at="2022-03-31T15:23:52 AEDT" name="getDatabsedata" finished-at="2022-03-31T15:24:07 AEDT" duration-ms="14780" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5623392b]]>
+                <![CDATA[org.testng.TestRunner@12554996]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDatabsedata -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.Test3@72bd06ca]" started-at="2022-03-31T13:31:19 AEDT" name="closeDriver" finished-at="2022-03-31T13:31:19 AEDT" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.Test3@625e134e]" started-at="2022-03-31T15:24:07 AEDT" name="closeDriver" finished-at="2022-03-31T15:24:07 AEDT" duration-ms="39" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- com.Test3 -->
     </test> <!-- Test3 -->
-    <test started-at="2022-03-31T13:31:05 AEDT" name="Test1" finished-at="2022-03-31T13:32:04 AEDT" duration-ms="59546">
-      <class name="com.Test1">
-        <test-method is-config="true" signature="Setup(org.testng.ITestContext)[pri:0, instance:com.Test1@675d8c96]" started-at="2022-03-31T13:31:05 AEDT" name="Setup" finished-at="2022-03-31T13:31:06 AEDT" duration-ms="1558" status="PASS">
+    <test started-at="2022-03-31T15:23:50 AEDT" name="Test2" finished-at="2022-03-31T15:24:30 AEDT" duration-ms="39375">
+      <class name="com.Test2">
+        <test-method is-config="true" signature="homeTest(org.testng.ITestContext)[pri:0, instance:com.Test2@475835b1]" started-at="2022-03-31T15:23:50 AEDT" name="homeTest" finished-at="2022-03-31T15:24:29 AEDT" duration-ms="38787" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@10c8f62]]>
+                <![CDATA[org.testng.TestRunner@4b6579e8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeTest -->
+        <test-method signature="getHomePageItems()[pri:0, instance:com.Test2@475835b1]" started-at="2022-03-31T15:24:29 AEDT" name="getHomePageItems" finished-at="2022-03-31T15:24:29 AEDT" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getHomePageItems -->
+        <test-method is-config="true" signature="closedrvier()[pri:0, instance:com.Test2@475835b1]" started-at="2022-03-31T15:24:29 AEDT" name="closedrvier" finished-at="2022-03-31T15:24:30 AEDT" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedrvier -->
+      </class> <!-- com.Test2 -->
+    </test> <!-- Test2 -->
+    <test started-at="2022-03-31T15:23:50 AEDT" name="Test1" finished-at="2022-03-31T15:25:04 AEDT" duration-ms="74338">
+      <class name="com.Test1">
+        <test-method is-config="true" signature="Setup(org.testng.ITestContext)[pri:0, instance:com.Test1@3efe7086]" started-at="2022-03-31T15:23:50 AEDT" name="Setup" finished-at="2022-03-31T15:23:52 AEDT" duration-ms="1924" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@62dae245]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="LoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.Test1@675d8c96]" started-at="2022-03-31T13:31:07 AEDT" name="LoginTest" data-provider="getData" finished-at="2022-03-31T13:31:27 AEDT" duration-ms="20687" status="PASS">
+        <test-method signature="LoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.Test1@3efe7086]" started-at="2022-03-31T15:23:53 AEDT" name="LoginTest" data-provider="getData" finished-at="2022-03-31T15:24:17 AEDT" duration-ms="24282" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -110,7 +87,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method signature="LoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.Test1@675d8c96]" started-at="2022-03-31T13:31:27 AEDT" name="LoginTest" data-provider="getData" finished-at="2022-03-31T13:32:04 AEDT" duration-ms="36751" status="PASS">
+        <test-method signature="LoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.Test1@3efe7086]" started-at="2022-03-31T15:24:17 AEDT" name="LoginTest" data-provider="getData" finished-at="2022-03-31T15:25:04 AEDT" duration-ms="47162" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -126,7 +103,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="closedrvier()[pri:0, instance:com.Test1@675d8c96]" started-at="2022-03-31T13:32:04 AEDT" name="closedrvier" finished-at="2022-03-31T13:32:04 AEDT" duration-ms="27" status="PASS">
+        <test-method is-config="true" signature="closedrvier()[pri:0, instance:com.Test1@3efe7086]" started-at="2022-03-31T15:25:04 AEDT" name="closedrvier" finished-at="2022-03-31T15:25:04 AEDT" duration-ms="38" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedrvier -->

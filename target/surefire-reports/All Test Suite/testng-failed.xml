@@ -4,26 +4,16 @@
   <listeners>
     <listener class-name="com.Resources.Listener"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Test2(failed)" verbose="0">
+  <test thread-count="5" parallel="tests" name="Test4(failed)" verbose="0">
     <classes>
-      <class name="com.Test2">
+      <class name="com.Test4">
         <methods>
-          <include name="getHomePageItems"/>
-          <include name="homeTest"/>
-          <include name="closedrvier"/>
+          <include name="uploadFile"/>
+          <include name="downloadFile"/>
+          <include name="closeDriver"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.Test2 -->
+      </class> <!-- com.Test4 -->
     </classes>
-  </test> <!-- Test2(failed) -->
-  <test thread-count="5" parallel="tests" name="Test1(failed)" verbose="0">
-    <classes>
-      <class name="com.Test1">
-        <methods>
-          <include name="LoginTest"/>
-          <include name="Setup"/>
-          <include name="closedrvier"/>
-        </methods>
-      </class> <!-- com.Test1 -->
-    </classes>
-  </test> <!-- Test1(failed) -->
+  </test> <!-- Test4(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

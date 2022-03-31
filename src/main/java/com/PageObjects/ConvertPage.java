@@ -17,8 +17,23 @@ public class ConvertPage extends TestBase {
     @FindBy(id = "uploader_btn")
     private WebElement ConvertButton;
 
+    @FindBy(id = "btn-upload")
+    private WebElement Convert;
+
+    @FindBy(xpath = "//*[@id=\"downloadFile\"]")
+    private  WebElement download;
+
     public  WebElement getButton()
     {
         return ConvertButton;
+    }
+    public  WebElement getButton2()
+    {
+        return Convert;
+    }
+    public  WebElement getDownload()
+    {
+
+        return download;
     }
 }

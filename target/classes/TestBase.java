@@ -38,6 +38,15 @@ public class TestBase {
     public Properties p;
     public static ExtentReports extent;
 
+    public String getDownloadDirc() throws IOException {
+        p = new Properties();
+        FileInputStream fi = new FileInputStream("src/main/java/com/Properties/GlobalParameters.properties");
+        p.load(fi);
+        String downloads = p.getProperty("DownloadDirectory");
+        String downloadDirec = System.getProperty("user.dir") + downloads;
+        return downloadDirec;
+    }
+
     public WebDriver initializeDriver() throws IOException {
 
         p = new Properties();
@@ -69,7 +78,8 @@ public class TestBase {
 
                 //default download directory
                 Map<String, Object> prefs = new HashMap<String, Object>();
-                prefs.put("download.default_directory", "C:\\Chrome\\Downloads");
+
+                prefs.put("download.default_directory", getDownloadDirc());
                 options.setExperimentalOption("prefs",prefs);
 
                 //block popups
@@ -121,14 +131,14 @@ public class TestBase {
 
     public WebElement waitElementClick(WebElement element){
         WebElement find;
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, 20);
         find = wait.until(ExpectedConditions.elementToBeClickable(element));
         return find;
     }
 
     public WebElement waitElementVisable(WebDriver driver, WebElement element){
         WebElement find;
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, 20);
         find = wait.until(ExpectedConditions.visibilityOf(element));
         return find;
     }
