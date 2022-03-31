@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="75.049" tests="6" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="71.541" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="webdriver.chrome.driver" value="C:\Users\2015j\IdeaProjects\FrameWorkDesign/src/main/resources/chromedriver.exe"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\2015j\AppData\Local\Temp\surefire2681409890480523699\surefirebooter880781532927203388.jar C:\Users\2015j\AppData\Local\Temp\surefire2681409890480523699 2022-03-31T15-23-49_526-jvmRun1 surefire10324793171417696970tmp surefire_07619629053729604470tmp"/>
+    <property name="sun.java.command" value="C:\Users\2015j\AppData\Local\Temp\surefire14732377736588877196\surefirebooter15356796980477008600.jar C:\Users\2015j\AppData\Local\Temp\surefire14732377736588877196 2022-03-31T15-41-59_180-jvmRun1 surefire11417707992745097798tmp surefire_011513052512544468347tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\2015j\IdeaProjects\FrameWorkDesign\target\test-classes;C:\Users\2015j\IdeaProjects\FrameWorkDesign\target\classes;C:\Users\2015j\.m2\repository\org\testng\testng\7.5\testng-7.5.jar;C:\Users\2015j\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\2015j\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\2015j\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\2015j\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\2015j\.m2\repository\org\seleniumhq\selenium\selenium-java\4.1.2\selenium-java-4.1.2.jar;C:\Users\2015j\.m2\repository\org\seleniumhq\selenium\selenium-api\4.1.2\selenium-api-4.1.2.jar;C:\Users\2015j\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.1.2\selenium-chrome-driver-4.1.2.jar;C:\Users\2015j\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\2015j\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\2015j\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\2015j\.m2\repository\com\google\guava\guava\31.0.1-jre\guava-31.0.1-jre.jar;C:\Users\2015j\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\2015j\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\2015j\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\2015j\.m2\repository\com\google\errorprone\error_prone_annotations\2.7.1\error_prone_annotations-2.7.1.jar;C:\Users\2015j\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\2015j\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.1.2\selenium-chromium-driver-4.1.2.jar;C:\Users\2015j\.m2\repository\org\seleniumhq\selenium\selenium-json\4.1.2\selenium-json-4.1.2.jar;C:\Users\2015j\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.1.2\selenium-devtools-v85-4.1.2.jar;C:\Users\2015j\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v95\4.1.2\selenium-devtools-v95-4.1.2.jar;C:\Users\2015j\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v96\4.1.2\selenium-devtools-v96-4.1.2.jar;C:\Users\2015j\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v97\4.1.2\selenium-devtools-v97-4.1.2.jar;C:\Users\2015j\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.1.2\selenium-edge-driver-4.1.2.jar;C:\Users\2015j\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.1.2\selenium-firefox-driver-4.1.2.jar;C:\Users\2015j\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.1.2\selenium-firefox-xpi-driver-4.1.2.jar;C:\Users\2015j\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.1.2\selenium-ie-driver-4.1.2.jar;C:\Users\2015j\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.1.2\selenium-opera-driver-4.1.2.jar;C:\Users\2015j\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.1.2\selenium-remote-driver-4.1.2.jar;C:\Users\2015j\.m2\repository\io\netty\netty-buffer\4.1.73.Final\netty-buffer-4.1.73.Final.jar;C:\Users\2015j\.m2\repository\io\netty\netty-codec-http\4.1.73.Final\netty-codec-http-4.1.73.Final.jar;C:\Users\2015j\.m2\repository\io\netty\netty-codec\4.1.73.Final\netty-codec-4.1.73.Final.jar;C:\Users\2015j\.m2\repository\io\netty\netty-handler\4.1.73.Final\netty-handler-4.1.73.Final.jar;C:\Users\2015j\.m2\repository\io\netty\netty-tcnative-classes\2.0.46.Final\netty-tcnative-classes-2.0.46.Final.jar;C:\Users\2015j\.m2\repository\io\netty\netty-common\4.1.73.Final\netty-common-4.1.73.Final.jar;C:\Users\2015j\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.73.Final\netty-transport-classes-epoll-4.1.73.Final.jar;C:\Users\2015j\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.73.Final\netty-transport-classes-kqueue-4.1.73.Final.jar;C:\Users\2015j\.m2\repository\io\netty\netty-transport-native-epoll\4.1.73.Final\netty-transport-native-epoll-4.1.73.Final.jar;C:\Users\2015j\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.73.Final\netty-transport-native-kqueue-4.1.73.Final.jar;C:\Users\2015j\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.73.Final\netty-transport-native-unix-common-4.1.73.Final.jar;C:\Users\2015j\.m2\repository\io\netty\netty-transport\4.1.73.Final\netty-transport-4.1.73.Final.jar;C:\Users\2015j\.m2\repository\io\netty\netty-resolver\4.1.73.Final\netty-resolver-4.1.73.Final.jar;C:\Users\2015j\.m2\repository\io\opentelemetry\opentelemetry-api\1.10.1\opentelemetry-api-1.10.1.jar;C:\Users\2015j\.m2\repository\io\opentelemetry\opentelemetry-context\1.10.1\opentelemetry-context-1.10.1.jar;C:\Users\2015j\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.10.1\opentelemetry-exporter-logging-1.10.1.jar;C:\Users\2015j\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.10.1-alpha\opentelemetry-sdk-metrics-1.10.1-alpha.jar;C:\Users\2015j\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.10.1-alpha\opentelemetry-sdk-logs-1.10.1-alpha.jar;C:\Users\2015j\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.10.1\opentelemetry-sdk-common-1.10.1.jar;C:\Users\2015j\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.10.1\opentelemetry-sdk-extension-autoconfigure-spi-1.10.1.jar;C:\Users\2015j\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.10.1-alpha\opentelemetry-sdk-extension-autoconfigure-1.10.1-alpha.jar;C:\Users\2015j\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.10.1\opentelemetry-sdk-trace-1.10.1.jar;C:\Users\2015j\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.10.1\opentelemetry-sdk-1.10.1.jar;C:\Users\2015j\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.10.1-alpha\opentelemetry-semconv-1.10.1-alpha.jar;C:\Users\2015j\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\2015j\.m2\repository\net\bytebuddy\byte-buddy\1.12.7\byte-buddy-1.12.7.jar;C:\Users\2015j\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\2015j\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\2015j\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\2015j\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\2015j\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\2015j\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\2015j\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\2015j\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\2015j\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\2015j\.m2\repository\org\seleniumhq\selenium\selenium-http\4.1.2\selenium-http-4.1.2.jar;C:\Users\2015j\.m2\repository\net\jodah\failsafe\2.4.4\failsafe-2.4.4.jar;C:\Users\2015j\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.1.2\selenium-safari-driver-4.1.2.jar;C:\Users\2015j\.m2\repository\org\seleniumhq\selenium\selenium-support\4.1.2\selenium-support-4.1.2.jar;C:\Users\2015j\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.2\log4j-core-2.17.2.jar;C:\Users\2015j\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\Users\2015j\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.17.2\log4j-slf4j-impl-2.17.2.jar;C:\Users\2015j\.m2\repository\org\apache\poi\poi-ooxml\5.2.2\poi-ooxml-5.2.2.jar;C:\Users\2015j\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.2\poi-ooxml-lite-5.2.2.jar;C:\Users\2015j\.m2\repository\org\apache\xmlbeans\xmlbeans\5.0.3\xmlbeans-5.0.3.jar;C:\Users\2015j\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\2015j\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\2015j\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\2015j\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\2015j\.m2\repository\org\apache\poi\poi\5.2.2\poi-5.2.2.jar;C:\Users\2015j\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\2015j\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\2015j\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\2015j\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\2015j\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\2015j\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\2015j\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\2015j\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\2015j\.m2\repository\org\projectlombok\lombok\1.18.22\lombok-1.18.22.jar;C:\Users\2015j\.m2\repository\mysql\mysql-connector-java\8.0.28\mysql-connector-java-8.0.28.jar;C:\Users\2015j\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\2015j\AppData\Local\Temp\surefire2681409890480523699\surefirebooter880781532927203388.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\2015j\AppData\Local\Temp\surefire14732377736588877196\surefirebooter15356796980477008600.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17+35-LTS-2724"/>
@@ -58,82 +58,79 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="uploadFile" classname="com.Test4" time="10.552">
-    <system-out><![CDATA[15:23:52.472 [TestNG-tests-4] INFO  logA - Test Case 4 -------------------------------------->
-15:23:52.472 [TestNG-tests-2] INFO  logA - Test Case 2 -------------------------------------->
-15:23:52.497 [TestNG-tests-4] DEBUG logA - Uploading File -------------------------------------->
-15:23:52.563 [TestNG-tests-3] INFO  logA - Test Case 3 -------------------------------------->
-15:23:52.580 [TestNG-tests-1] INFO  logA - Test Case 1 -------------------------------------->
-15:23:52.581 [TestNG-tests-1] DEBUG logA - Loading excel data -------------------->
-15:23:53.012 [TestNG-tests-1] INFO  logA - Got excel data---------------------->
-15:24:03.338 [TestNG-tests-4] INFO  logA - Succesfully uploaded file
+  <testcase name="uploadFile" classname="com.Test4" time="10.13">
+    <system-out><![CDATA[15:42:02.106 [TestNG-tests-3] INFO  logA - Test Case 3 -------------------------------------->
+15:42:02.106 [TestNG-tests-4] INFO  logA - Test Case 4 -------------------------------------->
+15:42:02.124 [TestNG-tests-4] DEBUG logA - Uploading File -------------------------------------->
+15:42:02.149 [TestNG-tests-2] INFO  logA - Test Case 2 -------------------------------------->
+15:42:02.212 [TestNG-tests-1] INFO  logA - Test Case 1 -------------------------------------->
+15:42:02.213 [TestNG-tests-1] DEBUG logA - Loading excel data -------------------->
+15:42:02.582 [TestNG-tests-1] INFO  logA - Got excel data---------------------->
+15:42:12.474 [TestNG-tests-4] INFO  logA - Succesfully uploaded file
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 56803
+    <system-err><![CDATA[Starting ChromeDriver 99.0.4844.51 (dS5t3a7retc0i2n4g74 bCh5raofeme2D3riv6e8r4 e9799.603d.543884849.65c16 3(adc57377-erce0f2s47/4bbra5nacfhe-2h3e6a8d4se/74986434d5@3{8#St8a8r7t95i6}n)c go 6nC3 ahpcor7ro7tm- er5De0r6fi1sv8/ebr
+r Oa9nn9lc.yh0 -.lh4oe8c4aald4 s./c54o18n 4n(4ed@c5{t3#i78oe7cn50s2} 4)a7 r4oebn 5 aaplfoler2to3 w56e28d14.2e87
+9P
+6lOe3nadls5ye3  8ls8o9ec6eac l6h t3tcapcos7n:7n/-e/rccethfirsoo/mbnersda rnaircvehe -rah.lcelhaordwosemdi/.u4m8
+.4oP4rl@ge{/a#sseec u8sreiet7 y5h-t}cto)pn sso:in/d /epcroharrttoi o5mn7es3d r4fi8ovre 
+rsO.uncglghyer soltmoiicouanmls.  oorcgon/n sneecctuiroitykn-ecseop ninsagir deCe hraralotlmieooDnwrsei dvf.eorr 
+ SsPsaltufeaegar.gsteei
+s nstgeie o nCshh trotpnos m:ke/eD/ercpihivnregor mC he9rd9or.mi0ev.De4rr8i.4vc4eh.r5 rs1oa mf(iedu.5m3.
+7oercg0/2s4e7c4ubr5iatfye-2c3o6n8s4ied7e9r6a3tdi5on3s8 8f9o6rc 6s3uagcg7e7s-trieofnss/ borna nkcehe-phinega dCsh/r4o8m4e4D@ri{v#e8r7 5s}a)f eo.n 
+port 51178
 Only local connections are allowed.
-Please see httpSst:a/r/tcihng rCohmreodmreiDvreir.vechrr o9m9i.u0m..4o8r4g4/.s5e1 c(udr5i3t7ye-cc0o2n4s7i4dbe5raaftei2o3n6s8 4feo7r9 6s3udg5g3e8s8ti9o6ncs6 3ona ck77e-erpeifnsg/ bCrharnomcehD-rhievaedrs /s4a8f4e4.@
-{#875}) on port 59079
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 63736
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+Please see https://chromedriver.chromium.org/security-considerations for CsughgreosmteiDornis voern  wkaeesping  CshtraormteeDdr isvuecr cseasfsef.u
+lly.
 ChromeDriver was started successfully.
-Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 62921
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-consideratiCohnsr ofomre Dsruigvgeers twioanss  sotnar tkeede psiuncgc eCshsrfoumlelDyr.iv
-er safe.
 ChromeDriver was started successfully.
 ChromeDriver was started successfully.
-Mar 31, 2022 3:23:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Mar 31, 2022 3:42:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Mar 31, 2022 3:23:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Mar 31, 2022 3:42:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Mar 31, 2022 3:23:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 31, 2022 3:42:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 97
-Mar 31, 2022 3:23:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 31, 2022 3:42:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 97
-Mar 31, 2022 3:23:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 31, 2022 3:42:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 99 of 97
-Mar 31, 2022 3:23:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 31, 2022 3:42:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 99 of 97
-Mar 31, 2022 3:23:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Mar 31, 2022 3:42:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Mar 31, 2022 3:23:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 31, 2022 3:42:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 97
-Mar 31, 2022 3:23:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 31, 2022 3:42:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 99 of 97
-Mar 31, 2022 3:23:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Mar 31, 2022 3:42:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Mar 31, 2022 3:23:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 31, 2022 3:42:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 97
-Mar 31, 2022 3:23:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 31, 2022 3:42:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 99 of 97
 ]]></system-err>
   </testcase>
-  <testcase name="closeDriver" classname="com.Test4" time="11.548">
-    <failure message="chrome not reachable&#10;  (Session info: chrome=99.0.4844.74)&#10;Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;&#10;System info: host: &apos;DESKTOP-3D1RE16&apos;, ip: &apos;192.168.50.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4c3c9ec728917fd3037c5a4145b85c79, close {}]&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\2015j\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55992/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4c3c9ec728917fd3037c5a4145b85c79" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
-chrome not reachable
-  (Session info: chrome=99.0.4844.74)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-3D1RE16', ip: '192.168.50.136', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4c3c9ec728917fd3037c5a4145b85c79, close {}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\2015j\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55992/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4c3c9ec728917fd3037c5a4145b85c79
-	at com.Test4.closeDriver(Test4.java:63)
-]]></failure>
-  </testcase>
-  <testcase name="getDatabsedata[org.testng.TestRunner@12554996](1)" classname="com.Test3" time="4.063">
-    <system-out><![CDATA[15:24:03.569 [TestNG-tests-4] DEBUG logA - waiting for download buttong
-15:24:04.965 [TestNG-tests-3] DEBUG logA - See if popup is appearing ---------->
-15:24:05.119 [TestNG-tests-3] INFO  logA - Succesfully cliked on popup--------------------->
+  <testcase name="downloadFile" classname="com.Test4" time="5.317">
+    <system-out><![CDATA[15:42:26.328 [TestNG-tests-4] INFO  logA - file downloaded
+15:42:28.332 [TestNG-tests-4] INFO  logA - File exists
+15:42:28.334 [TestNG-tests-4] INFO  logA - File Deleted
 ]]></system-out>
   </testcase>
-  <testcase name="LoginTest[John, Dodge](1)" classname="com.Test1" time="14.029">
-    <system-out><![CDATA[15:24:13.486 [TestNG-tests-1] DEBUG logA - See if popup is appearing ---------->
-15:24:13.585 [TestNG-tests-1] INFO  logA - Succesfully cliked on popup--------------------->
+  <testcase name="getHomePageItems" classname="com.Test2" time="0.55">
+    <system-out><![CDATA[15:42:12.715 [TestNG-tests-4] DEBUG logA - waiting for download buttong
+15:42:19.662 [TestNG-tests-3] DEBUG logA - See if popup is appearing ---------->
+15:42:19.759 [TestNG-tests-3] INFO  logA - Succesfully cliked on popup--------------------->
+15:42:19.947 [TestNG-tests-2] DEBUG logA - Waiting for popup to appear and click ---------->
+15:42:20.052 [TestNG-tests-2] INFO  logA - Succesfully cliked on popup--------------------->
+15:42:20.052 [TestNG-tests-2] DEBUG logA - Validating home page items --------------------->
+15:42:20.100 [TestNG-tests-2] INFO  logA - All items are present and correct--------------------> Test Passed
 ]]></system-out>
-    <system-err><![CDATA[Mar 31, 2022 3:24:07 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+  </testcase>
+  <testcase name="getDatabsedata[org.testng.TestRunner@147e962e](1)" classname="com.Test3" time="2.282">
+    <system-out><![CDATA[15:42:20.603 [TestNG-tests-1] DEBUG logA - See if popup is appearing ---------->
+15:42:20.729 [TestNG-tests-1] INFO  logA - Succesfully cliked on popup--------------------->
+]]></system-out>
+    <system-err><![CDATA[Mar 31, 2022 3:42:20 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
 WARNING: Connection reset
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
@@ -153,11 +150,8 @@ java.net.SocketException: Connection reset
 
 ]]></system-err>
   </testcase>
-  <testcase name="LoginTest[Sarah, Smith](2)" classname="com.Test1" time="35.512">
-    <system-out><![CDATA[15:24:33.537 [TestNG-tests-1] DEBUG logA - See if popup is appearing ---------->
-15:25:04.198 [TestNG-tests-1] DEBUG logA - No popup -------------> Proceeding to login---------->
-]]></system-out>
-    <system-err><![CDATA[Mar 31, 2022 3:24:30 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+  <testcase name="LoginTest[John, Dodge](1)" classname="com.Test1" time="3.29">
+    <system-err><![CDATA[Mar 31, 2022 3:42:22 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
 WARNING: Connection reset
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
@@ -177,11 +171,28 @@ java.net.SocketException: Connection reset
 
 ]]></system-err>
   </testcase>
-  <testcase name="getHomePageItems" classname="com.Test2" time="0.52">
-    <system-out><![CDATA[15:24:29.444 [TestNG-tests-2] DEBUG logA - Waiting for popup to appear and click ---------->
-15:24:29.526 [TestNG-tests-2] INFO  logA - Succesfully cliked on popup--------------------->
-15:24:29.527 [TestNG-tests-2] DEBUG logA - Validating home page items --------------------->
-15:24:29.569 [TestNG-tests-2] INFO  logA - All items are present and correct--------------------> Test Passed
+  <testcase name="LoginTest[Sarah, Smith](2)" classname="com.Test1" time="47.844">
+    <system-out><![CDATA[15:42:39.717 [TestNG-tests-1] DEBUG logA - See if popup is appearing ---------->
+15:43:10.324 [TestNG-tests-1] DEBUG logA - No popup -------------> Proceeding to login---------->
 ]]></system-out>
+    <system-err><![CDATA[Mar 31, 2022 3:42:28 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+]]></system-err>
   </testcase>
 </testsuite>

@@ -12,3 +12,42 @@
 15:24:29.569 [TestNG-tests-2] INFO  logA - All items are present and correct--------------------> Test Passed
 15:24:33.537 [TestNG-tests-1] DEBUG logA - See if popup is appearing ---------->
 15:25:04.198 [TestNG-tests-1] DEBUG logA - No popup -------------> Proceeding to login---------->
+15:41:20.241 [TestNG-tests-3] INFO  logA - Test Case 3 -------------------------------------->
+15:41:20.241 [TestNG-tests-1] INFO  logA - Test Case 1 -------------------------------------->
+15:41:20.253 [TestNG-tests-1] DEBUG logA - Loading excel data -------------------->
+15:41:20.316 [TestNG-tests-4] INFO  logA - Test Case 4 -------------------------------------->
+15:41:20.318 [TestNG-tests-4] DEBUG logA - Uploading File -------------------------------------->
+15:41:20.389 [TestNG-tests-2] INFO  logA - Test Case 2 -------------------------------------->
+15:41:20.683 [TestNG-tests-1] INFO  logA - Got excel data---------------------->
+15:41:31.184 [TestNG-tests-4] INFO  logA - Succesfully uploaded file
+15:41:31.429 [TestNG-tests-4] DEBUG logA - waiting for download buttong
+15:41:37.879 [TestNG-tests-3] DEBUG logA - See if popup is appearing ---------->
+15:41:37.974 [TestNG-tests-3] INFO  logA - Succesfully cliked on popup--------------------->
+15:41:38.129 [TestNG-tests-2] DEBUG logA - Waiting for popup to appear and click ---------->
+15:41:38.225 [TestNG-tests-2] INFO  logA - Succesfully cliked on popup--------------------->
+15:41:38.226 [TestNG-tests-2] DEBUG logA - Validating home page items --------------------->
+15:41:38.270 [TestNG-tests-2] INFO  logA - All items are present and correct--------------------> Test Passed
+15:41:39.038 [TestNG-tests-1] DEBUG logA - See if popup is appearing ---------->
+15:41:39.129 [TestNG-tests-1] INFO  logA - Succesfully cliked on popup--------------------->
+15:42:02.106 [TestNG-tests-3] INFO  logA - Test Case 3 -------------------------------------->
+15:42:02.106 [TestNG-tests-4] INFO  logA - Test Case 4 -------------------------------------->
+15:42:02.124 [TestNG-tests-4] DEBUG logA - Uploading File -------------------------------------->
+15:42:02.149 [TestNG-tests-2] INFO  logA - Test Case 2 -------------------------------------->
+15:42:02.212 [TestNG-tests-1] INFO  logA - Test Case 1 -------------------------------------->
+15:42:02.213 [TestNG-tests-1] DEBUG logA - Loading excel data -------------------->
+15:42:02.582 [TestNG-tests-1] INFO  logA - Got excel data---------------------->
+15:42:12.474 [TestNG-tests-4] INFO  logA - Succesfully uploaded file
+15:42:12.715 [TestNG-tests-4] DEBUG logA - waiting for download buttong
+15:42:19.662 [TestNG-tests-3] DEBUG logA - See if popup is appearing ---------->
+15:42:19.759 [TestNG-tests-3] INFO  logA - Succesfully cliked on popup--------------------->
+15:42:19.947 [TestNG-tests-2] DEBUG logA - Waiting for popup to appear and click ---------->
+15:42:20.052 [TestNG-tests-2] INFO  logA - Succesfully cliked on popup--------------------->
+15:42:20.052 [TestNG-tests-2] DEBUG logA - Validating home page items --------------------->
+15:42:20.100 [TestNG-tests-2] INFO  logA - All items are present and correct--------------------> Test Passed
+15:42:20.603 [TestNG-tests-1] DEBUG logA - See if popup is appearing ---------->
+15:42:20.729 [TestNG-tests-1] INFO  logA - Succesfully cliked on popup--------------------->
+15:42:26.328 [TestNG-tests-4] INFO  logA - file downloaded
+15:42:28.332 [TestNG-tests-4] INFO  logA - File exists
+15:42:28.334 [TestNG-tests-4] INFO  logA - File Deleted
+15:42:39.717 [TestNG-tests-1] DEBUG logA - See if popup is appearing ---------->
+15:43:10.324 [TestNG-tests-1] DEBUG logA - No popup -------------> Proceeding to login---------->
