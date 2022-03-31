@@ -21,5 +21,10 @@
             <class name="com.Test3"></class>
         </classes>
     </test>
+    <test name="Test4">
+        <classes>
+            <class name="com.Test4"></class>
+        </classes>
+    </test>
 
 </suite>

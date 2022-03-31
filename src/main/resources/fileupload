@@ -1,0 +1,3 @@
+ControlFocus("Open","","Edit1")
+ControlSetText("Open","","Edit1","\Work\BABOK_Guide_v3_Member.pdf")
+ControlClick("Open","","Button1")
