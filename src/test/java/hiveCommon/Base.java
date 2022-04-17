@@ -11,12 +11,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
+import java.sql.*;
 import java.time.Duration;
 
 public class Base {
     public WebDriver driver;
     protected KeyValReader salesProp = new KeyValReader("src/test/resources/Properties/Salesforce.properties");
     protected KeyValReader greenCartProp = new KeyValReader("src/test/resources/Properties/GreenCart.properties");
+    protected KeyValReader sql = new KeyValReader("src/test/resources/Properties/SQL.properties");
 
     public WebElement WaitElement(WebElement element){
         WebElement find;
@@ -51,5 +53,21 @@ public class Base {
         {
 
         }
+    }
+
+    public ResultSet ExecuteMysqlQuery(String query) throws SQLException {
+
+        String host = sql.getProperty("host");
+        String port = sql.getProperty("port");
+        String DbName = sql.getProperty("DbName");
+        String username = sql.getProperty("username");
+        String password = sql.getProperty("password");
+
+        Connection con = DriverManager.getConnection("jdbc:mysql://"+ host + port + DbName, username,password);
+        Statement state = con.createStatement();
+        ResultSet result = state.executeQuery(query);
+
+        return result;
+
     }
 }

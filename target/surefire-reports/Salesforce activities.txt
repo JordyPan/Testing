@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Salesforce activities
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.559 s - in Salesforce activities
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.112 s - in Salesforce activities

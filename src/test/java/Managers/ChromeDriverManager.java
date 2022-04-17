@@ -9,6 +9,8 @@ import java.util.HashMap;
 
 public class ChromeDriverManager implements BrowserManager {
 
+    KeyValReader hiveProp = new KeyValReader("Downloads");
+
     @Override
     public WebDriver initializeDriver() {
 
@@ -38,8 +40,9 @@ public class ChromeDriverManager implements BrowserManager {
 
     public HashMap<String,String> setPrefs()
     {
+        String downloadDir = hiveProp.getProperty("downloadDir");
         HashMap<String,String> prefs = new HashMap<>();
-
+        prefs.put("download.default_directory", downloadDir);
 
         return prefs;
 
