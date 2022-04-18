@@ -35,8 +35,8 @@ public class BrowserInstanceManager {
 
     public static synchronized void driverConfig(WebDriver driver)
     {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(80));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
         driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(20));
     }
 }

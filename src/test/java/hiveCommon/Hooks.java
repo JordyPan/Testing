@@ -28,8 +28,8 @@ public class Hooks {
         Base b = new Base();
         scenario = BrowserInstanceManager.GetScenario();
         b.takeScreenshot(scenario);
-        BrowserInstanceManager.GetDriver().close();
-        BrowserInstanceManager.GetDriver().quit();
+        //BrowserInstanceManager.GetDriver().close();
+        //BrowserInstanceManager.GetDriver().quit();
     }
 
     public void initiateBrowser(String browserType)

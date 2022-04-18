@@ -3,10 +3,7 @@ package hiveCommon;
 import Managers.BrowserInstanceManager;
 import io.cucumber.java.Scenario;
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -20,9 +17,27 @@ public class Base {
     protected KeyValReader greenCartProp = new KeyValReader("src/test/resources/Properties/GreenCart.properties");
     protected KeyValReader sql = new KeyValReader("src/test/resources/Properties/SQL.properties");
 
+    public void forceWait(Integer seconds)
+    {
+        Integer mill = seconds*1000;
+        try {
+            Thread.sleep(mill);
+        }catch (Exception e)
+        {
+
+        }
+    }
+
     public WebElement WaitElement(WebElement element){
         WebElement find;
         WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        find = webDriverWait.until(ExpectedConditions.visibilityOf(element));
+        return find;
+    }
+
+    public WebElement WaitElement(WebElement element, Integer seconds){
+        WebElement find;
+        WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
         find = webDriverWait.until(ExpectedConditions.visibilityOf(element));
         return find;
     }
@@ -32,6 +47,12 @@ public class Base {
         WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(30));
         find = webDriverWait.until(ExpectedConditions.elementToBeClickable(element));
         return find;
+    }
+
+    public String ChordEnter(String a)
+    {
+        String chordKey = Keys.chord(a,Keys.ENTER);
+        return chordKey;
     }
 
     public String getProp(String filename, String Propname)
