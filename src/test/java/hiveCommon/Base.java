@@ -49,6 +49,12 @@ public class Base {
         return find;
     }
 
+    public void JavaScriptClick(WebElement element)
+    {
+        WaitElementClick(element);
+        ((JavascriptExecutor)driver).executeScript("arguments[0].click();", element);
+    }
+
     public String ChordEnter(String a)
     {
         String chordKey = Keys.chord(a,Keys.ENTER);

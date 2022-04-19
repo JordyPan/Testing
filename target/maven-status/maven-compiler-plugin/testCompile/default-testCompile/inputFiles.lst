@@ -1,3 +1,4 @@
+C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hivePageObject\JordyBookStorePage.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hivePageObject\SalesforceAppHome.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\Managers\PageObjectManager.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\Managers\BrowserInstanceManager.java
@@ -7,12 +8,14 @@ C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\Managers\ChromeDriverMana
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\Managers\BrowserManager.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hivePageObject\SalesforceLogin.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\Runner\TestRunner.java
+C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hiveStepDefinition\JordyBookStoreSteps.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hiveCommon\KeyValReader.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\Managers\FireFoxDriverManager.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hivePageObject\SalesforceHome.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hiveCommon\ContextInj.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\Managers\browsers.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hivePageObject\GreenCartHome.java
-C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hiveStepDefinition\SalesforceSteps.java
+C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hiveCommon\VariableInj.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hiveCommon\Hooks.java
+C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hiveStepDefinition\SalesforceMainSteps.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\Managers\EdgeDriverManager.java

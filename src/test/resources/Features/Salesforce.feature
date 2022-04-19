@@ -18,6 +18,30 @@ Feature: Salesforce activities
       |      APP         |
       | Jordy BookSotre |
 
+  @JordyBookStore
+  Scenario Outline: Multiplication
+    Given User logs into Salesforce APP
+    And User is at "Jordy BookSotre" App
+    When User enters "<number1>" and "<number2>" for Multiplication
+
+    Examples:
+      | number1 | number2 |
+      |   87    |   23    |
+      |   2    |   2    |
+
+  @JordyBookStore @BookTab
+  Scenario Outline: Add a new book
+    Given User logs into Salesforce APP
+    And User is at "Jordy BookSotre" App
+    When User clicks on book tab
+    And User fills in name "<BookName>" and type "<Type>" and Publish Date of today
+    Then User saves the new Book and checks whether new book created
+
+    Examples:
+      | BookName | Type |
+      | Jordy's Book | Science |
+
+
 
 
 
