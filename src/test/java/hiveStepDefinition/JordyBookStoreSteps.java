@@ -56,8 +56,9 @@ public class JordyBookStoreSteps extends Base {
         String newBookName = (String) testContext.variableInj.getVar("newBookName");
         WaitElementClick(jordyBookStorePage.getSaveNewBookBtn()).click();
         forceWait(10);
-        WaitElementClick(jordyBookStorePage.getMainSearch()).sendKeys(Keys.chord(newBookName,Keys.ENTER));
-        //to implement by using case id
+        WaitElementClick(jordyBookStorePage.getBookSearch()).sendKeys(Keys.chord(newBookName,Keys.ENTER));
+        WebElement search = WaitElement(jordyBookStorePage.getElementFromSearch(newBookName));
+        Assert.assertEquals(newBookName,search.getText());
 
     }
 
@@ -91,5 +92,29 @@ public class JordyBookStoreSteps extends Base {
         testContext.variableInj.setVar("newBookName",name);
     }
 
+    @When("User searches for book {string} and clicks on it")
+    public void User_searches_for_book_string_and_clicks_on_it(String bookname)
+    {
+        WaitElementClick(jordyBookStorePage.getHomeSearch()).sendKeys(Keys.chord(bookname,Keys.ENTER));
+        WaitElement(jordyBookStorePage.getElementFromSearch(bookname)).click();
+        String case_id = driver.getCurrentUrl().split("/")[4];
+        testContext.variableInj.setVar("case_id",case_id);
+    }
+
+    @And("deletes the book")
+    public void deletes_the_book()
+    {
+        forceWait(5);
+        WaitElement(jordyBookStorePage.getBookOptionDropdown()).click();
+        WaitElementClick(jordyBookStorePage.getDeleteOption()).click();
+        WaitElementClick(jordyBookStorePage.getDeleteBtn()).click();
+        jordyBookStorePage.getBookDetail((String) testContext.variableInj.getVar("case_id"));
+        if(jordyBookStorePage.getErrorCode().contains("This record is no longer available"))
+        {
+            Assert.assertTrue(true);
+        }else {
+            Assert.assertTrue(false);
+        }
+    }
 
 }

@@ -29,7 +29,7 @@ Feature: Salesforce activities
       |   87    |   23    |
       |   2    |   2    |
 
-  @JordyBookStore @BookTab
+  @JordyBookStore @BookTab @add
   Scenario Outline: Add a new book
     Given User logs into Salesforce APP
     And User is at "Jordy BookSotre" App
@@ -40,6 +40,18 @@ Feature: Salesforce activities
     Examples:
       | BookName | Type |
       | Jordy's Book | Science |
+
+  @JordyBookStore @BookTab @Delete
+    Scenario Outline: Delete an existing book
+      Given User logs into Salesforce APP
+      And User is at "Jordy BookSotre" App
+      When User searches for book "<Bookname>" and clicks on it
+      And deletes the book
+
+    Examples:
+      | Bookname |
+      | Jordy's Book |
+
 
 
 

@@ -9,9 +9,10 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public class JordyBookStorePage {
-
+    WebDriver driver;
     public JordyBookStorePage(WebDriver driver)
     {
+        this.driver = driver;
         PageFactory.initElements(driver,this);
 
     }
@@ -53,8 +54,25 @@ public class JordyBookStorePage {
     private WebElement SaveNewBookBtn;
 
     @FindBy(xpath = "//input[@title='Search Book and more']")
-    private WebElement MainSearch;
+    private WebElement BookSearch;
 
+    @FindBy(xpath = "//input[@title='Search...']")
+    private WebElement HomeSearch;
+
+    @FindBy(xpath = "//span[@class = 'slds-grid slds-grid--align-spread'] //a[@data-refid='recordId']")
+    private List<WebElement> SearchLinks;
+
+    @FindBy(xpath = "//li[@class = 'slds-dropdown-trigger slds-dropdown-trigger_click slds-button_last overflow']")
+    private WebElement BookOptionDropdown;
+
+    @FindBy(xpath = "//div[@class= 'slds-dropdown slds-dropdown_right'] //a[@name='Delete']")
+    private WebElement deleteOption;
+
+    @FindBy(xpath = "//button[@title = 'Delete']")
+    private WebElement deleteBtn;
+
+    @FindBy(xpath = "//p[@class='detail']")
+    private WebElement errorcdoe;
 
     public WebElement getAppTitle()
     {
@@ -130,10 +148,57 @@ public class JordyBookStorePage {
         return SaveNewBookBtn;
     }
 
-    public WebElement getMainSearch()
+    public WebElement getBookSearch()
     {
-        return MainSearch;
+        return BookSearch;
     }
 
+    public WebElement getHomeSearch()
+    {
+        return HomeSearch;
+    }
+
+    public List<WebElement> getSearchLinks()
+    {
+        return SearchLinks;
+    }
+
+    public WebElement getElementFromSearch(String Name)
+    {
+        for(WebElement webElement : getSearchLinks())
+        {
+            if (webElement.getText().equalsIgnoreCase(Name))
+            {
+                return webElement;
+            }
+        }
+        return null;
+    }
+
+    public WebElement getBookOptionDropdown()
+    {
+        return BookOptionDropdown;
+    }
+
+    public WebElement getDeleteOption()
+    {
+        return deleteOption;
+    }
+
+    public WebElement getDeleteBtn()
+    {
+        return  deleteBtn;
+    }
+
+    public void getBookDetail(String book_id)
+    {
+        String url = "https://jordy-dev-ed.lightning.force.com/lightning/r/Book__c/"+ book_id+"/view";
+        driver.get(url);
+    }
+
+    public String getErrorCode()
+    {
+        return errorcdoe.getText();
+    }
 
 }
