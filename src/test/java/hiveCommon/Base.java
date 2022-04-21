@@ -3,6 +3,8 @@ package hiveCommon;
 import Managers.BrowserInstanceManager;
 import io.cucumber.java.Scenario;
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -16,6 +18,8 @@ public class Base {
     protected KeyValReader salesProp = new KeyValReader("src/test/resources/Properties/Salesforce.properties");
     protected KeyValReader greenCartProp = new KeyValReader("src/test/resources/Properties/GreenCart.properties");
     protected KeyValReader sql = new KeyValReader("src/test/resources/Properties/SQL.properties");
+
+    public static Logger Logger = LogManager.getLogger("base");
 
     public void forceWait(Integer seconds)
     {

@@ -78,6 +78,14 @@
     </dependencies>
 
     <build>
+
+        <resources>
+            <resource>
+                <directory>src/test/resources/Properties</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
         <pluginManagement>
             <plugins>
                 <plugin>

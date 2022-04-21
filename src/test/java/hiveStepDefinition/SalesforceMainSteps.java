@@ -34,6 +34,7 @@ public class SalesforceMainSteps extends Base {
     @Given("User logs into Salesforce APP")
     public void User_logs_into_Salesforce_APP()
     {
+        Logger.debug("Logging in Salesforce-----------------------");
         driver.get(app);
         WaitElement(salesforceHome.getLoginButton()).click();
         String username = salesProp.getProperty("UserName");
@@ -42,6 +43,7 @@ public class SalesforceMainSteps extends Base {
         WaitElement(salesforceLogin.getPasswordBox()).sendKeys(pswd);
         WaitElementClick(salesforceLogin.getLoginBtn()).click();
         WaitElement(salesforceAppHome.getHomeText(),50);
+        Logger.info("Logged into salesforce-----------------------");
 
     }
 

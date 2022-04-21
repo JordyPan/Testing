@@ -36,9 +36,11 @@ public class JordyBookStoreSteps extends Base {
     @And("User is at {string} App")
     public void User_is_at_string_App(String app)
     {
+
         WaitElementClick(salesforceAppHome.getAppSelect()).click();
         WaitElement(salesforceAppHome.getSearchAppBox()).sendKeys(ChordEnter(app));
         testContext.variableInj.setVar("app",app);
+        Logger.info("Hello im here at Jordy's bookstore app -------------------");
     }
 
 
@@ -53,12 +55,15 @@ public class JordyBookStoreSteps extends Base {
     @Then("User saves the new Book and checks whether new book created")
     public void User_saves_the_new_Book_and_checks_whether_new_book_created()
     {
+        Logger.debug("Trying to save new book----------------------------------------------");
         String newBookName = (String) testContext.variableInj.getVar("newBookName");
         WaitElementClick(jordyBookStorePage.getSaveNewBookBtn()).click();
+        Logger.info("Successfully saved the new book");
         forceWait(10);
         WaitElementClick(jordyBookStorePage.getBookSearch()).sendKeys(Keys.chord(newBookName,Keys.ENTER));
         WebElement search = WaitElement(jordyBookStorePage.getElementFromSearch(newBookName));
         Assert.assertEquals(newBookName,search.getText());
+        Logger.info("Successfully validated new book");
 
     }
 
@@ -77,33 +82,40 @@ public class JordyBookStoreSteps extends Base {
     @When("User clicks on book tab")
     public void User_clicks_on_book_tab()
     {
+        Logger.debug("Trying to click on Books Tab-----------------------------");
         JavaScriptClick(jordyBookStorePage.getBookTab());
         JavaScriptClick(jordyBookStorePage.getNewBookBtn());
+        Logger.info("Successfully clicked on Books tab------------------------------");
 
     }
 
     @And("User fills in name {string} and type {string} and Publish Date of today")
     public void User_fills_in_name_string_and_type_string_and_Publish_Date_of_today(String name, String type)
     {
+        Logger.debug("Adding new book details ----------------------------------------");
         WaitElementClick(jordyBookStorePage.getNameBox()).sendKeys(name);
         WaitElementClick(jordyBookStorePage.getTypeSelectBox()).click();
         jordyBookStorePage.getSelectBoxOption(type);
         WaitElementClick(jordyBookStorePage.getCalendarBook()).sendKeys(TodaysDate);
         testContext.variableInj.setVar("newBookName",name);
+        Logger.info("Successfully added new Book details------------------------------");
     }
 
     @When("User searches for book {string} and clicks on it")
     public void User_searches_for_book_string_and_clicks_on_it(String bookname)
     {
+        Logger.debug("Searching for book-----------------------------------------");
         WaitElementClick(jordyBookStorePage.getHomeSearch()).sendKeys(Keys.chord(bookname,Keys.ENTER));
         WaitElement(jordyBookStorePage.getElementFromSearch(bookname)).click();
         String case_id = driver.getCurrentUrl().split("/")[4];
         testContext.variableInj.setVar("case_id",case_id);
+        Logger.info("Found the Book-------------------------------------------------");
     }
 
     @And("deletes the book")
     public void deletes_the_book()
     {
+        Logger.debug("Trying to delete a book------------------------------------------");
         forceWait(5);
         WaitElement(jordyBookStorePage.getBookOptionDropdown()).click();
         WaitElementClick(jordyBookStorePage.getDeleteOption()).click();
@@ -115,6 +127,7 @@ public class JordyBookStoreSteps extends Base {
         }else {
             Assert.assertTrue(false);
         }
+        Logger.info("Succesfully Deleted Book-------------------------------------------");
     }
 
 }
