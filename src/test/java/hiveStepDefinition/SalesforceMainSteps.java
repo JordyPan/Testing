@@ -87,6 +87,14 @@ public class SalesforceMainSteps extends Base {
         Assert.assertEquals("Home",salesforceAppHome.getHomeText().getText());
     }
 
+    @And("User is at {string} App")
+    public void User_is_at_string_App(String app)
+    {
 
+        WaitElementClick(salesforceAppHome.getAppSelect()).click();
+        WaitElement(salesforceAppHome.getSearchAppBox()).sendKeys(ChordEnter(app));
+        testContext.variableInj.setVar("app",app);
+        Logger.info("Hello im here at app -------------------");
+    }
 
 }

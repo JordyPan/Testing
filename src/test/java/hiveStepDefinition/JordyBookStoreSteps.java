@@ -33,17 +33,6 @@ public class JordyBookStoreSteps extends Base {
         driver = BrowserInstanceManager.GetDriver();
     }
 
-    @And("User is at {string} App")
-    public void User_is_at_string_App(String app)
-    {
-
-        WaitElementClick(salesforceAppHome.getAppSelect()).click();
-        WaitElement(salesforceAppHome.getSearchAppBox()).sendKeys(ChordEnter(app));
-        testContext.variableInj.setVar("app",app);
-        Logger.info("Hello im here at Jordy's bookstore app -------------------");
-    }
-
-
     @Then("APP should be loaded")
     public void APP_should_be_loaded()
     {
