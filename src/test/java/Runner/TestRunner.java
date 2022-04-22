@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/cucumber-report.html"},
         dryRun = false,
         monochrome = false,
-        tags = "not @ignore"
+        tags = "@Marketing"
 
 )
 

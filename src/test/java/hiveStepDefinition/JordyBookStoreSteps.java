@@ -22,7 +22,7 @@ public class JordyBookStoreSteps extends Base {
     ContextInj testContext;
     JordyBookStorePage jordyBookStorePage;
     SalesforceAppHome salesforceAppHome;
-    String TodaysDate = new SimpleDateFormat("dd/M/yyyy").format(Calendar.getInstance().getTime());
+
 
 
     public JordyBookStoreSteps(ContextInj TestContext)

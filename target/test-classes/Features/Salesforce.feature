@@ -52,6 +52,15 @@ Feature: Salesforce activities
       | Bookname |
       | Jordy's Book |
 
+  @Marketing
+  Scenario: Add a new opportunity
+    Given User logs into Salesforce APP
+    And User is at "Marketing" App
+    When User clicks on Opportunities Tab
+    And User creates a new Opportunity
+      | Opportunity one | Qualification |
+    Then New Opportunity should be created
+
 
 
 

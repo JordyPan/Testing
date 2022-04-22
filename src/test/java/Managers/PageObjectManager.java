@@ -12,6 +12,7 @@ public class PageObjectManager {
     SalesforceAppHome salesforceAppHome;
 
     JordyBookStorePage jordyBookStorePage;
+    MarketingPage marketingPage;
 
     GreenCartHome greenCartHome;
 
@@ -43,5 +44,10 @@ public class PageObjectManager {
 
     public JordyBookStorePage getJordyBookStorePage() {
         return jordyBookStorePage == null? jordyBookStorePage = new JordyBookStorePage(driver) : jordyBookStorePage;
+    }
+
+    public MarketingPage getMarketingPage()
+    {
+        return marketingPage == null? marketingPage = new MarketingPage(driver) : marketingPage;
     }
 }

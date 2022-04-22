@@ -11,14 +11,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.sql.*;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Calendar;
 
 public class Base {
     public WebDriver driver;
     protected KeyValReader salesProp = new KeyValReader("src/test/resources/Properties/Salesforce.properties");
     protected KeyValReader greenCartProp = new KeyValReader("src/test/resources/Properties/GreenCart.properties");
     protected KeyValReader sql = new KeyValReader("src/test/resources/Properties/SQL.properties");
-
+    public String TodaysDate = new SimpleDateFormat("dd/M/yyyy").format(Calendar.getInstance().getTime());
     public static Logger Logger = LogManager.getLogger("base");
 
     public void forceWait(Integer seconds)
