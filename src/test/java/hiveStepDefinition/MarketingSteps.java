@@ -44,9 +44,9 @@ public class MarketingSteps extends Base {
         String Stage = data.get(0).get(1);
 
         Logger.debug("Trying to send information--------------------");
-        WaitElement(marketingPage.getOpportunityNameField()).sendKeys(opportunityName);
-        WaitElement(marketingPage.getCloseDate()).sendKeys(TodaysDate);
-        WaitElement(marketingPage.getStageSelect()).click();
+        WaitElementClick(marketingPage.getOpportunityNameField()).sendKeys(opportunityName);
+        WaitElementClick(marketingPage.getCloseDate()).sendKeys(TodaysDate);
+        WaitElementClick(marketingPage.getStageSelect()).click();
         marketingPage.SelectStage(Stage);
         Logger.info("New Opportunity Information filled----------------");
         Logger.debug("Clicking on save ---------------------------------");
