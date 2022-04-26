@@ -20,6 +20,7 @@ public class Base {
     protected KeyValReader salesProp = new KeyValReader("src/test/resources/Properties/Salesforce.properties");
     protected KeyValReader greenCartProp = new KeyValReader("src/test/resources/Properties/GreenCart.properties");
     protected KeyValReader sql = new KeyValReader("src/test/resources/Properties/SQL.properties");
+    protected ExcelOperation excelOperation = new ExcelOperation("Test_Data.xlsx");
     public String TodaysDate = new SimpleDateFormat("dd/M/yyyy").format(Calendar.getInstance().getTime());
     public static Logger Logger = LogManager.getLogger("base");
 

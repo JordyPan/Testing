@@ -3,12 +3,15 @@ C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hivePageObject\Salesforce
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\Managers\PageObjectManager.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\Managers\BrowserInstanceManager.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hiveCommon\Base.java
+C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hivePageObject\MarketingPage.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hiveStepDefinition\GreenCartSteps.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\Managers\ChromeDriverManager.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\Managers\BrowserManager.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hivePageObject\SalesforceLogin.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\Runner\TestRunner.java
+C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hiveCommon\ExcelOperation.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hiveStepDefinition\JordyBookStoreSteps.java
+C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hiveStepDefinition\MarketingSteps.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hiveCommon\KeyValReader.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\Managers\FireFoxDriverManager.java
 C:\Users\2015j\IdeaProjects\JordyProject\src\test\java\hivePageObject\SalesforceHome.java

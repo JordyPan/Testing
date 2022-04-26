@@ -52,8 +52,8 @@ Feature: Salesforce activities
       | Bookname |
       | Jordy's Book |
 
-  @Marketing
-  Scenario: Add a new opportunity
+  @Marketing @OppDataTable
+  Scenario: Add a new opportunity with DataTable
     Given User logs into Salesforce APP
     And User is at "Marketing" App
     When User clicks on Opportunities Tab
@@ -61,6 +61,20 @@ Feature: Salesforce activities
       | Opportunity one | Qualification |
     Then New Opportunity should be created
 
+
+  @Marketing @OppDataExcel
+  Scenario Outline: Add a new opportunity with Excel
+    Given User logs into Salesforce APP
+    And User is at "Marketing" App
+    When User clicks on Opportunities Tab
+    And User creates a new Opportunity "<OpportunityName>"
+    Then New Opportunity should be created
+
+    Examples:
+      | OpportunityName |
+      | Opp One |
+      | Opp Two |
+      | Opp Three |
 
 
 

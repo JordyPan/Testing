@@ -3,11 +3,13 @@ package hiveStepDefinition;
 import Managers.BrowserInstanceManager;
 import hiveCommon.Base;
 import hiveCommon.ContextInj;
+import hiveCommon.ExcelOperation;
 import hivePageObject.MarketingPage;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.poi.ss.usermodel.Row;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 
@@ -53,6 +55,30 @@ public class MarketingSteps extends Base {
         WaitElementClick(marketingPage.getSaveNewOppBtn()).click();
         Logger.info("Successfully clicked on save -----------------------");
         contextInj.variableInj.setVar("OpportunityName",opportunityName);
+    }
+
+    @And("User creates a new Opportunity {string}")
+    public void User_creates_a_new_Opportunity_string(String name)
+    {
+
+        JavaScriptClick(marketingPage.getNewOpportunityBtn());
+        Logger.debug("Trying to send information--------------------");
+
+        ExcelOperation excelOperation = new ExcelOperation("Test_Data.xlsx");
+        List<String> data = excelOperation.getLabelCol("Opportunity Name",name);
+        String Oppname = data.get(0);
+        String date = data.get(1);
+        String stage = data.get(2);
+
+        WaitElementClick(marketingPage.getOpportunityNameField()).sendKeys(Oppname);
+        WaitElementClick(marketingPage.getCloseDate()).sendKeys(date);
+        WaitElementClick(marketingPage.getStageSelect()).click();
+        marketingPage.SelectStage(stage);
+        Logger.info("New Opportunity Information filled----------------");
+        Logger.debug("Clicking on save ---------------------------------");
+        WaitElementClick(marketingPage.getSaveNewOppBtn()).click();
+        Logger.info("Successfully clicked on save -----------------------");
+        contextInj.variableInj.setVar("OpportunityName",name);
     }
 
     @Then("New Opportunity should be created")
